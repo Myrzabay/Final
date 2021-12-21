@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+	<title>Geek Shop / CRUD</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/logo.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="container ">
+    <a href=../main/index.html><h1 > Geek Shop</h1><a>
+      <form id="geek-form">
+        <div class="form-group">
+          <label for="title">First Name</label>
+          <input type="text" id="fname" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="author">Last Name</label>
+          <input type="text" id="lname" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="isbn">Email</label>
+          <input type="text" id="email" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="title">Password</label>
+          <input type="text" id="password" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="author">confirm Password</label>
+          <input type="text" id="cpassword" class="form-control">
+        </div>
+        
+        <input type="submit" value="Add">
+      </form>
+      <table class="table ">
+        <thead>
+          <tr>
+          	<th>First name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Password</th>
+            <th>Confirm Password</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="geek-list"></tbody>
+      </table>
+  </div>
+ <script src="js/js.js"></script>
+</body>
+</html>

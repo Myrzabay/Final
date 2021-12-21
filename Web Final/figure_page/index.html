@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/logo.png">
+  
+  <title>Geek shop / figure page</title>
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/media.css">
+<link rel="stylesheet" href="css/owl.carousel.min.css">
+  
+  <style>
+    .attribution { font-size: 11px; text-align: center; margin-bottom: 20px; }
+    .attribution a { color: hsl(228, 45%, 44%);}
+  </style>
+</head>
+<body>
+<div class="dark-panel-2" onclick="close_nav()"></div>
+<div class="none-panel" onclick="closecart()"></div>
+<header>
+  <div class="app">
+    <nav>
+      <div class="logo-left">
+        <button><img src="images/icon-menu.svg" alt="" style="
+          width: 20px;
+      " onclick="open_nav()"></button> 
+       <a href="../main/index.html"> <img src="images/logo.png" height="20%" alt=""></a>
+      </div>
+      <div class="menu-left wow bounce">
+        <button onclick="close_nav()" ><img src="images/icon-close.svg" style="
+          width: 20px;
+      " alt=""></button>
+        <ul class="wow bounceInLeft">
+          <li class="wow shakeY"><a href="#">Collections</a></li>
+          <li class="wow shakeY"><a href="#">Films</a></li>
+          <li class="wow shakeY"><a href="#">TV series</a></li>
+          <li class="wow shakeY"><a href="#">Games</a></li>
+          <li class="wow bounce"><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="btn-right">
+        <div class="cart" onclick="showcart()"><img src="images/icon-cart.svg" alt="" >
+       <li class="show-tedad-top-cart"></li>
+        </div>
+        
+        <a href="../signup/signin.html" ><div class="image-profile"><div class="box-avatar"><img class="img-av" src="images/login.svg" alt=""></div></div></a>
+      </div>
+    </nav>
+    <div class="cart-box">
+      <p class="cart-title">Cart</p>
+      <div class="hr wow bounceInLeft"></div>
+      <div id="boz-1" class="display-none wow bounceInLeft">
+      <div class="div_p wow bounceInLeft">
+      <img class="img-cart" src="images/image-product-1.jpg" alt="">
+      <div class="po" >
+      <p class="title-cart wow bounce">Фигурка Бэтмена и Рыцаря Аркхема</p>
+      <p class="one-je wow bounce">10 000KZT x<span id="tedad-m"> 3</span></p > <h4 class="sun-je">10 000KZT</h4>
+    </div>
+    <div><img class="delete-cart" src="images/icon-delete.svg" alt="" onclick="del()"></div>
+    </div>
+    <div style="width: 100%; padding: 0 20px 20px 20px;">
+    <button class="Checkout">Checkout</button>
+  </div>
+</div>
+<p class="cart-empty">your cart is empty.</p>
+
+    </div>
+  </div>
+  
+</header>
+
+<main>
+  <div class="app wow bounceInLeft">
+    <div class="box">
+    <div class="images-left">
+      <div class="images-slider" >
+      <div class="owl-carousel owl_1">
+        <div class="image-big"> <img src="images/image-product-1.jpg" alt="" onclick="show()"> </div>
+        <div class="image-big"> <img src="images/image-product-2.jpg" alt="" onclick="show()"> </div>
+        <div class="image-big"> <img src="images/image-product-3.jpg" alt="" onclick="show()"> </div>
+        <div class="image-big"> <img src="images/image-product-4.jpg" alt="" onclick="show()"> </div>
+  
+      </div>
+      <div class="owl-carousel owl_3">
+        <div class="image-big"> <img src="images/image-product-1-thumbnail.jpg" alt="" onclick="show()"> </div>
+        <div class="image-big"> <img src="images/image-product-2-thumbnail.jpg" alt="" onclick="show()"> </div>
+        <div class="image-big"> <img src="images/image-product-3-thumbnail.jpg" alt="" onclick="show()"> </div>
+        <div class="image-big"> <img src="images/image-product-4-thumbnail.jpg" alt="" onclick="show()"> </div>
+  
+      </div>
+    </div>
+    </div>
+  
+    <div class="title-right wow bounceInRight">
+      <p class="company wow bounce"> Geek Shop</p>
+      <h2 class="names">Фигурка Бэтмена и Рыцаря Аркхема</h2>
+      <p class="content"> Фигурка Бэтмена 
+        Фигурка Рыцаря Аркхема </p>
+        <h3 class="Price-now">10 000KZT</h3><span class="Discount">50%</span><p class="Price">20 000KZT</p>
+<div class="y">
+        <button class="add" onclick="minuse()"><img src="images/icon-minus.svg" alt=""></button>
+        <input type="number" id="number" value="0" disabled>
+        <button class="remove" onclick='pluse()'><img src="images/icon-plus.svg" alt=""></button>
+      </div>
+        <button class="submit" onclick="AddToCart()"><p>Add to cart</p></button>
+    </div>
+  </div>
+  </div>
+</main>
+<div class="black-panel" onclick="closee()"></div>
+<div class="app">
+  <div class="images-box">
+    <div class="close"><button onclick="closee()"><img src="images/icon-close.svg" alt=""></button></div>
+    <div class="owl-carousel owl_2">
+      <div class="image-big"> <img src="images/image-product-1.jpg" alt=""> </div>
+      <div class="image-big"> <img src="images/image-product-2.jpg" alt=""> </div>
+      <div class="image-big"> <img src="images/image-product-3.jpg" alt=""> </div>
+      <div class="image-big"> <img src="images/image-product-4.jpg" alt=""> </div>
+
+    </div>
+  </div>
+</div>
+
+<script src="js/wow.min.js"></script>
+  <script>
+  new WOW().init();
+  </script>
+<div class="sms">Added to cart</div>
+
+
+  <script src="js/jquery-3.6.0.min.js"></script>
+    
+  <script src="js/javascript.js"></script>
+    
+  <script src="js/owl.carousel.min.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function(){
+    $('.owl_1').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:false,
+    dots:true,
+    items:1
+});
+$('.owl_2').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    dots:true,
+    items:1
+});
+$('.owl_3').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    dots:false,
+    items:1
+});
+});
+
+  </script>
+  
+</body>
+</html>

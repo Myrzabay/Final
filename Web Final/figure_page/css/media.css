@@ -1,0 +1,175 @@
+.app {
+  position: relative;
+  text-align: center;
+  width: 1200px;
+}
+/* media */
+@media (max-width: 1199.98px) {
+  .app {
+    width: 992px;
+  }
+  .submit{
+    width: 200px;
+  }
+}
+@media (max-width: 991.98px) {
+  .app {
+    width: 768px;
+  }
+  .title-right {
+    padding-right: 0;
+  }
+  header nav{
+    grid-template-columns: 20% 60% 20%;
+  }
+}
+@media (max-width: 767.98px) {
+  .app {
+    width: 576px;
+  }
+  .logo-left button{
+  
+    display: inline-block;
+    }
+    
+    .menu-left button{
+
+    display: inline-block;
+    }
+  header nav{
+    grid-template-columns: 50% 50%;
+    width: 94%;
+  }
+  .black-panel{
+    display: none !important;
+  }
+  .images-box{
+    display: none !important;
+  }
+  .menu-left{
+   position: fixed;
+   left: -100%;
+   top: 0;
+   width: 200px;
+   height: 100vh;
+   background: hsl(0, 0%, 100%);
+   box-shadow: 0px 20px 16px 8px rgb(0 0 0 / 10%);
+   z-index: 1200;
+   transition: all .3s ease;
+  }
+  .menu-left ul{
+    margin: 10px 0;
+  }
+  .menu-left ul li{
+    display: block;
+    height: auto;
+    padding: 10px 0 ;
+  }
+  .menu-left ul li a{
+color: #000 !important;
+  }
+  .btn-right{
+    width: 100%;
+    text-align: right;
+  }
+  .box{
+    margin-top: 0;
+    grid-template-columns: auto;
+  }
+  .owl_1{
+    display: none !important;
+  }
+  .owl_3{
+    display: block !important;
+  }
+  .images-slider img{
+    border-radius: 0;
+  }
+  .images-slider{
+    width: 82vw;
+  }
+  .owl-prev{
+top: 45% !important;
+    left: 0% !important;
+  }
+  .owl-next{
+top: 45% !important;
+    right: 2% !important;
+  }
+  .title-right{
+    margin: 30px 0;
+    padding: 5px 10px;
+  }
+  .Price{
+    display: inline-block;
+  }
+  .remove,.add,.submit,.cart img,.image-profile img{
+    cursor:default;
+  }
+ 
+}
+@media (max-width: 575.98px) {
+ 
+ .app{
+   width: 100%;
+ }
+ .title-cart {
+  display: block;
+}
+.po{
+  width: 100%;
+  text-align: left;
+}
+  .images-slider{
+    width: 100vw;
+  }
+  .title-right{
+
+    padding: 5px 20px;
+  }
+  .Price-now{
+    font-size: 36px;
+  }
+  .Discount {
+    font-size: 24px;
+  }
+  .Price{
+    font-size: 22px;
+    position: relative;
+    margin-left: 10vw;
+    margin-bottom: 20px;
+  }
+  .remove{
+    cursor:default;
+    position: absolute;
+    top: 15px;
+    right: 0;
+  }
+  .y{
+    display: block;
+    position: relative;
+    margin-bottom: 20px;
+  }
+  .add{
+    cursor:default;
+    position: absolute;
+    top: 15px;
+  }
+  #number{
+    width: 100%;
+    height: 48px;
+    border-radius: 10px;
+    background: hsl(223, 64%, 98%);
+  }
+  .submit {
+    width: 100%;
+    margin: 0;
+}
+.cart-box{
+  
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  width: 98%;
+}
+}
